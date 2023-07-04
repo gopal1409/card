@@ -5,3 +5,9 @@
 ###if you want to run this command as normal user
 usermod -aG docker ubuntu
 ####the log off and login again
+###same image no need to download
+ 18  docker run -p 81:80 -d --name webhost nginx
+   19  docker ps
+   20  docker images
+   21  docker info
+   
