@@ -16,3 +16,6 @@ usermod -aG docker ubuntu
 ####docker process
 docker ps
 docker ps -a
+####docker logs
+ 29  docker ps
+   30  docker logs 3bed4
