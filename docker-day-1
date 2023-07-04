@@ -19,3 +19,7 @@ docker ps -a
 ####docker logs
  29  docker ps
    30  docker logs 3bed4
+###delete the container
+ 48  docker ps
+   49  docker rm 3bed
+   50  docker rm 3bed --force
