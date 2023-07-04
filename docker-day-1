@@ -1,0 +1,4 @@
+#our docker first command
+   9  docker container run --publish 80:80 --detach nginx
+   10  docker ps
+   11  curl localhost
