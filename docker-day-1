@@ -13,3 +13,6 @@ usermod -aG docker ubuntu
    
 ###foregroung process
  docker run -p 82:80 httpd
+####docker process
+docker ps
+docker ps -a
