@@ -23,3 +23,12 @@ docker ps -a
  48  docker ps
    49  docker rm 3bed
    50  docker rm 3bed --force
+##vm versus process
+  53  docker run --name mongo -d mongo
+   54  docker ps
+   55  ps aux
+   56  kill -9 24059
+   57  docker ps
+   58  docker ps -a
+   59  docker images
+   60  docker rmi mongo
