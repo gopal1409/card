@@ -44,3 +44,6 @@ exit
 #########3to know more about containers
 docker container stats
 docker container inspect e0dc14
+###########docker networking
+ 28  docker network ls
+   29  docker network inspect bridge
