@@ -59,4 +59,17 @@ docker container inspect e0dc14
    40  docker container run -p 85:80-d nginx
    41  docker container run -p 85:80 -d nginx
    42  docker ps
+###docker network internal dns
+ 22  docker network ls
+   23  docker network
+   24  docker network create my_app_net
+   25  docker network ls
+   26  docker run -d --name app --network my_app_net nginx:alpine
+   27  docker run -d --name logic --network my_app_net nginx:alpine
+   28  docker ps
+   29  docker network ls
+   30  docker network inspect my_app_net
+   31  clear
+   32  docker container exec -it logic ping app
+   33  docker container exec -it app ping logic
 
