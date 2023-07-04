@@ -11,3 +11,5 @@ usermod -aG docker ubuntu
    20  docker images
    21  docker info
    
+###foregroung process
+ docker run -p 82:80 httpd
