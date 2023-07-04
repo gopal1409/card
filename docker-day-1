@@ -2,3 +2,6 @@
    9  docker container run --publish 80:80 --detach nginx
    10  docker ps
    11  curl localhost
+###if you want to run this command as normal user
+usermod -aG docker ubuntu
+####the log off and login again
