@@ -47,3 +47,16 @@ docker container inspect e0dc14
 ###########docker networking
  28  docker network ls
    29  docker network inspect bridge
+
+####docker entwork 2
+
+   36  docker container run -d nginx
+36  docker container run -d nginx
+36  docker container run -d nginx
+   37  docker ps
+   38  docker network inspect bridge
+   39  clear
+   40  docker container run -p 85:80-d nginx
+   41  docker container run -p 85:80 -d nginx
+   42  docker ps
+
