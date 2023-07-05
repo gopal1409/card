@@ -1,0 +1,6 @@
+###volumes
+  13  docker container run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=true -v mysql-db:/var/lib/mysql mysql:8.0.33
+   14  docker ps
+   15  docker volume ls
+   16  docker volume inspect mysql-db
+   17  cd /var/lib/docker/volumes/mysql-db/_data
