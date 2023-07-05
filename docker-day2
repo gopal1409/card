@@ -51,3 +51,5 @@ ENTRYPOINT ["java","-jar","websocket.jar"]
    59  curl localhost:81
    60  ls
    61  cat dockerfile
+###for nodejs and cheatsheet
+https://github.com/gopal1409/KubernetesDocker
