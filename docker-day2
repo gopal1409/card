@@ -65,3 +65,10 @@ RUN mvn clean package
 FROM openjdk
 COPY --from=MAVEN_build target/websocket-demo-0.0.1-SNAPSHOT.jar /web.jar
 ENTRYPOINT ["java","-jar","/web.jar]
+####how to scan a docker images
+  80  curl -fsSL https://raw.githubusercontent.com/docker/scout-cli/main/install.sh -o install-scout.sh
+   81  sh install-scout.sh
+   82  docker scout
+   83  docker images
+   85  docker scout newpp
+   86  docker scout cves newapp
