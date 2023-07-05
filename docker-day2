@@ -4,3 +4,10 @@
    15  docker volume ls
    16  docker volume inspect mysql-db
    17  cd /var/lib/docker/volumes/mysql-db/_data
+###update the container
+ 25  docker stop mysql
+   26  docker rm mysql
+   27  docker volume ls
+31  docker container run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=true -v mysql-db:/var/lib/mysql mysql:8.0
+   32  docker ps
+   33  docker container inspect mysql
