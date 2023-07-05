@@ -53,3 +53,15 @@ ENTRYPOINT ["java","-jar","websocket.jar"]
    61  cat dockerfile
 ###for nodejs and cheatsheet
 https://github.com/gopal1409/KubernetesDocker
+##3multibuild
+mv dockerfile new
+nano dockerfile
+#######inside the same put this
+FROM maven AS MAVEN_BUILD
+COPY ./ ./
+RUN mvn clean package
+
+
+FROM openjdk
+COPY --from=MAVEN_build target/websocket-demo-0.0.1-SNAPSHOT.jar /web.jar
+ENTRYPOINT ["java","-jar","/web.jar]
