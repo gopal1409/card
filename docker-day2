@@ -14,4 +14,18 @@
 ###3docker image pull
  5  docker pull tomcat
     6  docker images
+#####build images
+11  apt install default-jdk
+   12  java --version
+   13  apt install maven
+   14  mvn 
+   17  git clone https://github.com/gopal1409/springtomcatchatapp.git
+   18  cd springtomcatchatapp/
+   19  ls
+   20  mvn clean package
+   21  ls
+   22  cd target/
+   23  ls
+   24  cd ..
+   26  rm dockerfile
 
