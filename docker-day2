@@ -11,3 +11,7 @@
 31  docker container run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=true -v mysql-db:/var/lib/mysql mysql:8.0
    32  docker ps
    33  docker container inspect mysql
+###3docker image pull
+ 5  docker pull tomcat
+    6  docker images
+
